@@ -12,12 +12,13 @@ server.use(express.json())
 
 
 
+
 //Mappar Get- anrop till en viss adress
-server.get("/api",
-((req,res)=> res.json({message: "Helloworld brad kit"})))
+server.get("/api", ((req,res) => res.json({message: "Helloworld brad kit"})))
 
 //använde klassen userRoutes
 server.use("/api/user", userRoute)
+
 
 //lyssna på angiven port
 server.listen(PORT, ()=> 
